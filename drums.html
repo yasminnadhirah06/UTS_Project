@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drums - Musik Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            width: 200px;
+            height: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #555;
+        }
+        .product-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            width: 300px; /* Fixed width for consistent card sizing */
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+        .product-info {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/logo.png" alt="Musik Store Logo">
+            <h1>Drums</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guitars.html">Guitars</a></li>
+                <li><a href="drums.html" class="active">Drums</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="product-section">
+                <h2>Featured Drums</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="images/drum1.jpg" alt="Basic Drum Set">
+                        <div class="product-info">
+                            <h3>Basic Drum Set</h3>
+                            <p>Rp7.200.000</p>
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/drum2.jpg" alt="Professional Drum Set">
+                        <div class="product-info">
+                            <h3>Professional Drum Set</h3>
+                            <p>Rp62.400.000,00</p>
+                            <button>Buy Now</button
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Contact us at: <a href="mailto:yasmin@musikstore.com">yasmin@musikstore.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Instruments Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #store-logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #555;
+        }
+
+        .product-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/logo.png" alt="Musik Store Logo" id="store-logo"
+        style="width: 270px;">
+            <h1 style="color: #333;">Welcome to Our Musical Instruments Store</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guitars.html">Guitars</a></li>
+                <li><a href="drums.html">Drums</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="product-section">
+                <h2>Our Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="images/guitar.jpg" alt="Guitar" >
+                        <div class="product-info" style="background-color: #f9f9f9;">
+                            <h3 style="color: #333;">Guitars</h3>
+                            <p style="color: #666;">Explore our variety of guitars perfect for any skill level.</p>
+                            <a href="guitars.html" style="color: #007bff;">View Guitars</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/drums.jpg" alt="Drums">
+                        <div class="product-info" style="background-color: #f9f9f9;">
+                            <h3 style="color: #333;">Drums</h3>
+                            <p style="color: #666;">Find your rhythm with our selection of drum sets.</p>
+                            <a href="drums.html" style="color: #007bff;">View Drums</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Contact us at: <a href="mailto:yasmin@musicstore.com" style="color: #007bff;">yasmin@musicstore.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
